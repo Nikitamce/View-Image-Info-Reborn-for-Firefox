@@ -1,0 +1,374 @@
+{
+	"extensionName": {
+		"message": "Информация об изображении Reborn"
+	},
+	"extensionDescription": {
+		"message": "Отображает информацию о текущем изображении в новом окне, новой вкладке или поверх изображения."
+	},
+	"menu_viewImageInfo": {
+		"message": "Информация об изображении..."
+	},
+	"menu_parent": {
+		"message": "И&нформация об изображении Reborn"
+	},
+	"menu_viewImage": {
+		"message": "Открыть &изображение в этой вкладке"
+	},
+	"menu_window": {
+		"message": "Открыть информацию в новом &окне"
+	},
+	"menu_tab": {
+		"message": "Открыть информацию в новой в&кладке"
+	},
+	"menu_overlay": {
+		"message": "Показать информацию &поверх изображения"
+	},
+	"menu_nowebp": {
+		"message": "&Сохранить как... Запрос без image/webp"
+	},
+	"menu_asie11": {
+		"message": "Сохранить к&ак... Запрос как Internet Explorer 11"
+	},
+	"menu_options": {
+		"message": "Открыть настройки"
+	},
+	"menu_bgParent": {
+		"message": "Информация о фоновом изображении"
+	},
+	"menu_oopsmsg": {
+		"message": "Пожалуйста, используйте кнопки в всплывающем окне, а не пункты меню. Кроме того, View Image Info Reborn может не работать на других страницах расширений."
+	},
+	"label_imageUrl": {
+		"message": "URL изображения: "
+	},
+	"label_imageType": {
+		"message": "Тип изображения: "
+	},
+	"label_dimensions": {
+		"message": "Размеры: "
+	},
+	"label_imageSize": {
+		"message": "Размер изображения: "
+	},
+	"label_altText": {
+		"message": "Альтернативный текст (alt): "
+	},
+	"label_titleText": {
+		"message": "Текст заголовка (title): "
+	},
+	"label_lastModified": {
+		"message": "Последнее изменение: "
+	},
+	"text_unconfirmed": {
+		"message": "(не подтверждено)"
+	},
+	"text_scaledTo": {
+		"message": "масштабировано до"
+	},
+	"text_transferred": {
+		"message": "передано"
+	},
+	"text_in": {
+		"message": "за"
+	},
+	"text_seconds": {
+		"message": "сек."
+	},
+	"options_title": {
+		"message": "Настройки Информация об изображении Reborn"
+	},
+	"options_menuItemOptions": {
+		"message": "Настройки меню"
+	},
+	"options_saveChanges": {
+		"message": "Сохранить изменения"
+	},
+	"options_menuStyle": {
+		"message": "Стиль меню:"
+	},
+	"options_singleItem": {
+		"message": "Один элемент (используйте клавиши-модификаторы для выбора команд)"
+	},
+	"options_subMenu": {
+		"message": "Подменю (показывать команды во всплывающем меню)"
+	},
+	"options_actionsModifiers": {
+		"message": "Действие для одного элемента с разными модификаторами: "
+	},
+	"options_plainClick": {
+		"message": "Обычный клик:"
+	},
+	"options_shiftClick": {
+		"message": "Shift+клик:"
+	},
+	"options_ctrlClick": {
+		"message": "Ctrl+клик*:"
+	},
+	"options_macCmdClick": {
+		"message": "*на Mac: Command+клик"
+	},
+	"options_showPopup": {
+		"message": "Показать информацию во всплывающем окне"
+	},
+	"options_showOverlay": {
+		"message": "Показать информацию поверх изображения"
+	},
+	"options_showTab": {
+		"message": "Показать информацию в новой вкладке"
+	},
+	"options_viewImageCurrent": {
+		"message": "Открыть изображение в текущей вкладке"
+	},
+	"options_popupOptions": {
+		"message": "Параметры всплывающего окна"
+	},
+	"options_colorScheme": {
+		"message": "Цветовая схема и размер шрифта:"
+	},
+	"options_colorAuto": {
+		"message": "Автоматически"
+	},
+	"options_colorLight": {
+		"message": "Светлая тема"
+	},
+	"options_colorDark": {
+		"message": "Тёмная тема"
+	},
+	"options_fontSize": {
+		"message": "Размер текста:"
+	},
+	"options_previewPos": {
+		"message": "Размещение и размер предпросмотра:"
+	},
+	"options_previewAboveThumb": {
+		"message": "Предпросмотр над информацией (эскиз)"
+	},
+	"options_maxHeight": {
+		"message": "Макс. высота:"
+	},
+	"options_previewAboveWidth": {
+		"message": "Предпросмотр над информацией (на всю ширину)"
+	},
+	"options_previewBelowClassic": {
+		"message": "Предпросмотр под информацией (классический стиль)"
+	},
+	"options_windowSizePos": {
+		"message": "Размер и положение окна:"
+	},
+	"options_windowSizeAuto": {
+		"message": "Автоматически (размер и положение определяет Firefox)"
+	},
+	"options_windowSizeRetain": {
+		"message": "Сохранять последний размер из всплывающего окна"
+	},
+	"options_windowSizePosition": {
+		"message": "и положение"
+	},
+	"options_windowSizeExplain": {
+		"message": "Используйте кнопку ↔ во всплывающем окне для настройки размера"
+	},
+	"options_otherOptions": {
+		"message": "Другие настройки"
+	},
+	"options_tabViewing": {
+		"message": "Просмотр во вкладках:"
+	},
+	"options_openTabBackground": {
+		"message": "Открывать вкладку в фоновом режиме"
+	},
+	"options_tineyeSortOrder": {
+		"message": "Порядок сортировки поиска TinEye:"
+	},
+	"options_tineyeBestMatch": {
+		"message": "Лучшее совпадение (наиболее похожие)"
+	},
+	"options_tineyeMostChanged": {
+		"message": "Больше всего измененные"
+	},
+	"options_tineyeBiggest": {
+		"message": "Самое большое изображение"
+	},
+	"options_tineyeNewest": {
+		"message": "Новые"
+	},
+	"options_tineyeOldest": {
+		"message": "Старые"
+	},
+	"options_tineyeSee": {
+		"message": "См."
+	},
+	"options_tineyeTerms": {
+		"message": "Условия использования TinEye"
+	},
+	"options_tineyeAnd": {
+		"message": "и"
+	},
+	"options_tineyePrivacy": {
+		"message": "Политику конфиденциальности TinEye"
+	},
+	"options_copyrightTitle": {
+		"message": "Авторские права и лицензии"
+	},
+	"options_copyrightBehind": {
+		"message": "Код расширения behind! (© 2021 Devrim Şahin) используется на условиях Mozilla Public License 2.0, которую можно найти по адресу"
+	},
+	"options_copyrightTineye": {
+		"message": "Иконка кнопки, текст и код расширения TinEye Reverse Image Search (© 2021 TinEye) используются на условиях лицензии MIT:"
+	},
+	"page_title": {
+		"message": "Информация об изображении Reborn"
+	},
+	"page_btnSaveAs": {
+		"message": "Сохранить изображение"
+	},
+	"page_saveServed": {
+		"message": "Сохранить исходное"
+	},
+	"page_saveNoAccept": {
+		"message": "Запрос без image/webp"
+	},
+	"page_noRefererTitle": {
+		"message": "Не передавать заголовок Referer"
+	},
+	"page_saveIE11": {
+		"message": "Запрос от имени IE 11"
+	},
+	"page_savePng": {
+		"message": "Конвертировать в PNG (через canvas)"
+	},
+	"page_saveJpg": {
+		"message": "Конвертировать в JPEG (через canvas)"
+	},
+	"page_referServerTitle": {
+		"message": "Если сервер требует ссылающийся URL"
+	},
+	"page_referNone": {
+		"message": "Нет"
+	},
+	"page_referOrigin": {
+		"message": "Только домен (Origin)"
+	},
+	"page_referOriginPath": {
+		"message": "Домен и путь (Origin/Path)"
+	},
+	"page_referOriginTitle": {
+		"message": "Установить заголовок Referer в: _ORIGIN_"
+	},
+	"page_referOriginPathTitle": {
+		"message": "Установить заголовок Referer в: _ORIGINPATH_"
+	},
+	"page_tineyeTitle": {
+		"message": "Искать в TinEye (обратный поиск)"
+	},
+	"page_printTitle": {
+		"message": "Печать"
+	},
+	"page_resizerTitle": {
+		"message": "Показать/скрыть изменение размера"
+	},
+	"page_optionsTitle": {
+		"message": "Открыть страницу настроек"
+	},
+	"page_btnClose": {
+		"message": "Закрыть"
+	},
+	"page_properties": {
+		"message": "Свойства"
+	},
+	"page_imgUrl": {
+		"message": "URL изображения:"
+	},
+	"page_cdFilename": {
+		"message": "Имя файла из C-D:"
+	},
+	"page_cdFilenameTitle": {
+		"message": "параметр filename, переданный сервером в заголовке Content-Disposition"
+	},
+	"page_imageType": {
+		"message": "Тип изображения:"
+	},
+	"page_imageTypeTitle": {
+		"message": "Последняя часть заголовка Content-Type, предоставленного сервером"
+	},
+	"page_dimensions": {
+		"message": "Размеры:"
+	},
+	"page_scaled": {
+		"message": "масштабировано до"
+	},
+	"page_scaledBehind": {
+		"message": "размер элемента внутри/сзади"
+	},
+	"page_imageSize": {
+		"message": "Размер изображения:"
+	},
+	"page_imageSizeTitle": {
+		"message": "Получено через API window.performance(), свойство decodedBodySize"
+	},
+	"page_lastModified": {
+		"message": "Изменено:"
+	},
+	"page_lastModifiedTitle": {
+		"message": "Значение заголовка Last-Modified, предоставленного сервером"
+	},
+	"page_attributes": {
+		"message": "Атрибуты"
+	},
+	"page_context": {
+		"message": "Контекст"
+	},
+	"page_pageTitle": {
+		"message": "Заголовок страницы:"
+	},
+	"page_pageUrl": {
+		"message": "URL страницы:"
+	},
+	"page_pageUrlStandAlone": {
+		"message": "(Отдельное изображение)"
+	},
+	"page_referer": {
+		"message": "Источник (Referer):"
+	},
+	"page_inLinkTo": {
+		"message": "Ссылка на:"
+	},
+	"page_analyzed": {
+		"message": "Анализировано:"
+	},
+	"page_popupSizing": {
+		"message": "Размер всплывающего окна:"
+	},
+	"page_popupSizingAuto": {
+		"message": "Автоматически (определяет Firefox)"
+	},
+	"page_popupSizingCapture": {
+		"message": "Задать по этому окну"
+	},
+	"page_popupSizingPosition": {
+		"message": "Также сохранить положение"
+	},
+	"page_btnSave": {
+		"message": "Сохранить"
+	},
+	"page_btnCancel": {
+		"message": "Отмена"
+	},
+	"page_errNotLoaded": {
+		"message": "Изображение не загрузилось, возможно из-за отсутствия учетных данных или отсутствия реферера."
+	},
+	"page_errNotLoadedHost": {
+		"message": "Изображение не загрузилось, возможно из-за отсутствия учетных данных или ссылающегося хоста."
+	},
+	"page_errStorage": {
+		"message": "Ошибка обновления хранилища: "
+	},
+	"page_unknownUrl": {
+		"message": "неизвестный URL"
+	},
+	"page_unknownSize": {
+		"message": "неизвестный размер"
+	},
+	"page_computedCss": {
+		"message": "[вычисленный CSS]"
+	}
+}

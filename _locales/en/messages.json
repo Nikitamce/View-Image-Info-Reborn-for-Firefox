@@ -1,0 +1,374 @@
+{
+	"extensionName": {
+		"message": "View Image Info Reborn"
+	},
+	"extensionDescription": {
+		"message": "Display info for the current image in a new window, new tab, or overlaid on the image."
+	},
+	"menu_viewImageInfo": {
+		"message": "View Image Info..."
+	},
+	"menu_parent": {
+		"message": "View Image In&fo Reborn"
+	},
+	"menu_viewImage": {
+		"message": "View &Image... in this tab"
+	},
+	"menu_window": {
+		"message": "View Image Info in New &Window"
+	},
+	"menu_tab": {
+		"message": "View Image Info in New &Tab"
+	},
+	"menu_overlay": {
+		"message": "View Image Info in O&verlay"
+	},
+	"menu_nowebp": {
+		"message": "&Save As... Request without image/webp"
+	},
+	"menu_asie11": {
+		"message": "Save &As... Request as Internet Explorer 11"
+	},
+	"menu_options": {
+		"message": "Open the &Options page"
+	},
+	"menu_bgParent": {
+		"message": "View Background Image Info"
+	},
+	"menu_oopsmsg": {
+		"message": "Please use the buttons in the popup window rather than the menu items. Also, View Image Info Reborn may not work in other extension pages."
+	},
+	"label_imageUrl": {
+		"message": "Image URL: "
+	},
+	"label_imageType": {
+		"message": "Image Type: "
+	},
+	"label_dimensions": {
+		"message": "Dimensions: "
+	},
+	"label_imageSize": {
+		"message": "Image Size: "
+	},
+	"label_altText": {
+		"message": "Alt text: "
+	},
+	"label_titleText": {
+		"message": "Title text: "
+	},
+	"label_lastModified": {
+		"message": "Last Modified: "
+	},
+	"text_unconfirmed": {
+		"message": "(Unconfirmed)"
+	},
+	"text_scaledTo": {
+		"message": "scaled to"
+	},
+	"text_transferred": {
+		"message": "transferred"
+	},
+	"text_in": {
+		"message": "in"
+	},
+	"text_seconds": {
+		"message": "seconds"
+	},
+	"options_title": {
+		"message": "Options for View Image Info Reborn"
+	},
+	"options_menuItemOptions": {
+		"message": "Menu Item Options"
+	},
+	"options_saveChanges": {
+		"message": "Save Changes"
+	},
+	"options_menuStyle": {
+		"message": "Menu Style:"
+	},
+	"options_singleItem": {
+		"message": "Single Item (use modifier keys to select different commands)"
+	},
+	"options_subMenu": {
+		"message": "Sub-menu (show commands on a fly-out menu)"
+	},
+	"options_actionsModifiers": {
+		"message": "Action performed by Single Item with different modifiers: "
+	},
+	"options_plainClick": {
+		"message": "Plain click:"
+	},
+	"options_shiftClick": {
+		"message": "Shift+click:"
+	},
+	"options_ctrlClick": {
+		"message": "Ctrl+click*:"
+	},
+	"options_macCmdClick": {
+		"message": "*on Mac, Command+click"
+	},
+	"options_showPopup": {
+		"message": "Show info in popup window"
+	},
+	"options_showOverlay": {
+		"message": "Show info overlaid on image"
+	},
+	"options_showTab": {
+		"message": "Show info in new tab"
+	},
+	"options_viewImageCurrent": {
+		"message": "View image in current tab"
+	},
+	"options_popupOptions": {
+		"message": "Popup Options"
+	},
+	"options_colorScheme": {
+		"message": "Color scheme and font size:"
+	},
+	"options_colorAuto": {
+		"message": "Automatic"
+	},
+	"options_colorLight": {
+		"message": "Light background"
+	},
+	"options_colorDark": {
+		"message": "Dark background"
+	},
+	"options_fontSize": {
+		"message": "Info text size:"
+	},
+	"options_previewPos": {
+		"message": "Preview image position and sizing:"
+	},
+	"options_previewAboveThumb": {
+		"message": "Preview above info -- thumbnail"
+	},
+	"options_maxHeight": {
+		"message": "Max height:"
+	},
+	"options_previewAboveWidth": {
+		"message": "Preview above info -- up to available width"
+	},
+	"options_previewBelowClassic": {
+		"message": "Preview below info (classic style)"
+	},
+	"options_windowSizePos": {
+		"message": "Window size and position:"
+	},
+	"options_windowSizeAuto": {
+		"message": "Automatic (let Firefox decide window size and position)"
+	},
+	"options_windowSizeRetain": {
+		"message": "Retain last custom size saved from the popup"
+	},
+	"options_windowSizePosition": {
+		"message": "and position"
+	},
+	"options_windowSizeExplain": {
+		"message": "Use the ↔ button in the popup to set a custom size"
+	},
+	"options_otherOptions": {
+		"message": "Other Options"
+	},
+	"options_tabViewing": {
+		"message": "Tab viewing options:"
+	},
+	"options_openTabBackground": {
+		"message": "Open tab in the background"
+	},
+	"options_tineyeSortOrder": {
+		"message": "TinEye Reverse Image Search sort order:"
+	},
+	"options_tineyeBestMatch": {
+		"message": "Best Match (Most Similar)"
+	},
+	"options_tineyeMostChanged": {
+		"message": "Most Changed"
+	},
+	"options_tineyeBiggest": {
+		"message": "Biggest Image"
+	},
+	"options_tineyeNewest": {
+		"message": "Newest"
+	},
+	"options_tineyeOldest": {
+		"message": "Oldest"
+	},
+	"options_tineyeSee": {
+		"message": "See"
+	},
+	"options_tineyeTerms": {
+		"message": "TinEye Terms of Service"
+	},
+	"options_tineyeAnd": {
+		"message": "and"
+	},
+	"options_tineyePrivacy": {
+		"message": "TinEye Privacy Policy"
+	},
+	"options_copyrightTitle": {
+		"message": "Copyright and License Attributions"
+	},
+	"options_copyrightBehind": {
+		"message": "Code of the behind! extension (© 2021 Devrim Şahin) used under the terms of the Mozilla Public License 2.0, which can be found at"
+	},
+	"options_copyrightTineye": {
+		"message": "Button icon, text, and code of the TinEye Reverse Image Search extension (© 2021 TinEye) used under the terms of the MIT License, which provides as follows."
+	},
+	"page_title": {
+		"message": "View Image Info Reborn"
+	},
+	"page_btnSaveAs": {
+		"message": "Save Image"
+	},
+	"page_saveServed": {
+		"message": "Save \"as served\""
+	},
+	"page_saveNoAccept": {
+		"message": "Request without image/webp"
+	},
+	"page_noRefererTitle": {
+		"message": "Do not add a Referer header"
+	},
+	"page_saveIE11": {
+		"message": "Request as IE 11"
+	},
+	"page_savePng": {
+		"message": "Convert to PNG (via canvas)"
+	},
+	"page_saveJpg": {
+		"message": "Convert to JPEG (via canvas)"
+	},
+	"page_referServerTitle": {
+		"message": "If server requires referring URL"
+	},
+	"page_referNone": {
+		"message": "None"
+	},
+	"page_referOrigin": {
+		"message": "Origin"
+	},
+	"page_referOriginPath": {
+		"message": "Origin/Path"
+	},
+	"page_referOriginTitle": {
+		"message": "Set Referer header to: _ORIGIN_"
+	},
+	"page_referOriginPathTitle": {
+		"message": "Set Referer header to: _ORIGINPATH_"
+	},
+	"page_tineyeTitle": {
+		"message": "Send to TinEye for Reverse Image Search"
+	},
+	"page_printTitle": {
+		"message": "Print"
+	},
+	"page_resizerTitle": {
+		"message": "Show/Hide Resizer"
+	},
+	"page_optionsTitle": {
+		"message": "Open Options page"
+	},
+	"page_btnClose": {
+		"message": "Close"
+	},
+	"page_properties": {
+		"message": "Properties"
+	},
+	"page_imgUrl": {
+		"message": "Image URL:"
+	},
+	"page_cdFilename": {
+		"message": "C-D filename:"
+	},
+	"page_cdFilenameTitle": {
+		"message": "filename parameter provided by the server in the Content-Disposition header"
+	},
+	"page_imageType": {
+		"message": "Image Type:"
+	},
+	"page_imageTypeTitle": {
+		"message": "Last part of the Content-Type header provided by the server"
+	},
+	"page_dimensions": {
+		"message": "Dimensions:"
+	},
+	"page_scaled": {
+		"message": "scaled to"
+	},
+	"page_scaledBehind": {
+		"message": "in/on/behind element sized"
+	},
+	"page_imageSize": {
+		"message": "Image Size:"
+	},
+	"page_imageSizeTitle": {
+		"message": "Retrieved using the window.performance() API, decodedBodySize property"
+	},
+	"page_lastModified": {
+		"message": "Last Modified:"
+	},
+	"page_lastModifiedTitle": {
+		"message": "Value of Last-Modified header provided by the server"
+	},
+	"page_attributes": {
+		"message": "Attributes"
+	},
+	"page_context": {
+		"message": "Context"
+	},
+	"page_pageTitle": {
+		"message": "Page Title:"
+	},
+	"page_pageUrl": {
+		"message": "Page URL:"
+	},
+	"page_pageUrlStandAlone": {
+		"message": "(Stand Alone)"
+	},
+	"page_referer": {
+		"message": "Referer:"
+	},
+	"page_inLinkTo": {
+		"message": "In Link to:"
+	},
+	"page_analyzed": {
+		"message": "Analyzed:"
+	},
+	"page_popupSizing": {
+		"message": "Popup window sizing:"
+	},
+	"page_popupSizingAuto": {
+		"message": "Automatic (let Firefox decide)"
+	},
+	"page_popupSizingCapture": {
+		"message": "Set from this window"
+	},
+	"page_popupSizingPosition": {
+		"message": "Also save position"
+	},
+	"page_btnSave": {
+		"message": "Save"
+	},
+	"page_btnCancel": {
+		"message": "Cancel"
+	},
+	"page_errNotLoaded": {
+		"message": "Image did not load, possibly due to lack of credentials or missing referrer."
+	},
+	"page_errNotLoadedHost": {
+		"message": "Image did not load, possibly due to lack of credentials or referring host name."
+	},
+	"page_errStorage": {
+		"message": "Error updating storage: "
+	},
+	"page_unknownUrl": {
+		"message": "unknown url"
+	},
+	"page_unknownSize": {
+		"message": "unknown size"
+	},
+	"page_computedCss": {
+		"message": "[computedCSS]"
+	}
+}
