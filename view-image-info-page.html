@@ -3,71 +3,71 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="view-image-info-page.css" type="text/css">
-<title>View Image Info Reborn 2.1</title>
+<title data-i18n="page_title">View Image Info Reborn</title>
 </head>
 <body>
 <header>
 	<span id="controls">
 		<span id="imagetools">
 			<span id="btnspan">
-				<button id="btnsaveas" type="button" title="Save Image" state="closed">💾</button>
+				<button id="btnsaveas" type="button" data-i18n-title="page_btnSaveAs" state="closed">💾</button>
 			</span>
 			<ul id="saveaslist">
-				<li id="saveasserved"><a href="">Save "as served" <span id="defaultmime"></span></a></li>
-				<li id="saveasnoaccept"><a href="">Request without image/webp <button class="btnRefer" title="Do not add a Referer header">NR</button></a></li>
-				<li id="saveasie11"><a href="">Request as IE 11 <button class="btnRefer" title="Do not add a Referer header">NR</button></a></li>
-				<li id="saveaspng"><a href="" download="">Convert to PNG (via canvas)</a></li>
-				<li id="saveasjpg"><a href="" download="">Convert to JPEG (via canvas)</a></li><!-- TODO: Save as data URI in stand-alone or brief summary image page -->
+				<li id="saveasserved"><a href=""><span data-i18n="page_saveServed">Save "as served"</span> <span id="defaultmime"></span></a></li>
+				<li id="saveasnoaccept"><a href=""><span data-i18n="page_saveNoAccept">Request without image/webp</span> <button class="btnRefer" data-i18n-title="page_noRefererTitle">NR</button></a></li>
+				<li id="saveasie11"><a href=""><span data-i18n="page_saveIE11">Request as IE 11</span> <button class="btnRefer" data-i18n-title="page_noRefererTitle">NR</button></a></li>
+				<li id="saveaspng"><a href="" download="" data-i18n="page_savePng">Convert to PNG (via canvas)</a></li>
+				<li id="saveasjpg"><a href="" download="" data-i18n="page_saveJpg">Convert to JPEG (via canvas)</a></li>
 			</ul>
 			<form id="referForm" action="">
-				<p>If server requires referring URL<br>
-				   <label title="Do not add a Referer header"><input type="radio" name="radReferPolicy" value="no-referrer" checked>None</label>
-				   <label title="Set Referer header to: _ORIGIN_"><input type="radio" name="radReferPolicy" value="origin-only">Origin</label> 
-				   <label title="Set Referer header to: _ORIGINPATH_"><input type="radio" name="radReferPolicy" value="origin-path">Origin/Path</label></p>
+				<p><span data-i18n="page_referServerTitle">If server requires referring URL</span><br>
+				   <label data-i18n-title="page_noRefererTitle"><input type="radio" name="radReferPolicy" value="no-referrer" checked><span data-i18n="page_referNone">None</span></label>
+				   <label data-i18n-title="page_referOriginTitle"><input type="radio" name="radReferPolicy" value="origin-only"><span data-i18n="page_referOrigin">Origin</span></label> 
+				   <label data-i18n-title="page_referOriginPathTitle"><input type="radio" name="radReferPolicy" value="origin-path"><span data-i18n="page_referOriginPath">Origin/Path</span></label></p>
 			</form>
 		</span>
-		<button id="tineye" type="button" title="Send to TinEye for Reverse Image Search">&nbsp;</button> 
-		<button id="btnprint" type="button" title="Print">🖨️</button> 
-		<button id="showresize" type="button" title="Show/Hide Resizer">↔</button> 
-		<button id="options" type="button" title="Open Options page">⚙️</button>
+		<button id="tineye" type="button" data-i18n-title="page_tineyeTitle">&nbsp;</button> 
+		<button id="btnprint" type="button" data-i18n-title="page_printTitle">🖨️</button> 
+		<button id="showresize" type="button" data-i18n-title="page_resizerTitle">↔</button> 
+		<button id="options" type="button" data-i18n-title="page_optionsTitle">⚙️</button>
 	</span>
 </header>
 <main class="ver1dot8">
-	<p id="oops"><span></span><button id="btnclose" type="button" title="Close">X</button></p>
+	<p id="oops"><span></span><button id="btnclose" type="button" data-i18n-title="page_btnClose">X</button></p>
 	<div id="previewdiv">
 		<p id="previewpar"><img id="preview" src="" height="240" width="320"></p>
-		<ul id="previewtools"><li><button class="btnRefer" title="Do not add a Referer header">NR</button></li></ul>
+		<ul id="previewtools"><li><button class="btnRefer" data-i18n-title="page_noRefererTitle">NR</button></li></ul>
 	</div>
 	<table class="imageinfo"><thead>
-		<th colspan="2"><span>Properties</span></th>
+		<th colspan="2"><span data-i18n="page_properties">Properties</span></th>
 	</thead><tbody>
-		<tr id="imgurl"><th>Image URL: </th><td id="sourceUrl"></td></tr>
-		<tr id="fname"><th title="filename parameter provided by the server in the Content-Disposition header">C-D filename: </th><td><span id="fileName"><span></td></tr>
-		<tr><th title="Last part of the Content-Type header provided by the server">Image Type: </th><td><span id="mimeType">(Unconfirmed)</span></td></tr>
-		<tr><th>Dimensions: </th><td><span id="naturalWidth"></span> × <span id="naturalHeight"></span><span id="scaled"> (<span id="scaledDesc">scaled to</span> <span id="scaledWidth"></span> × <span id="scaledHeight"></span>)</span></td></tr>
-		<tr><th title="Retrieved using the window.performance() API, decodedBodySize property">Image Size: </th><td><span id="decodedSize"></span></td></tr>
-		<tr id="modified"><th title="Value of Last-Modified header provided by the server">Last Modified: </th><td><span id="lastMod"></span></td></tr>
+		<tr id="imgurl"><th data-i18n="page_imgUrl">Image URL:</th><td id="sourceUrl"></td></tr>
+		<tr id="fname"><th data-i18n-title="page_cdFilenameTitle" data-i18n="page_cdFilename">C-D filename:</th><td><span id="fileName"></span></td></tr>
+		<tr><th data-i18n-title="page_imageTypeTitle" data-i18n="page_imageType">Image Type:</th><td><span id="mimeType"></span></td></tr>
+		<tr><th data-i18n="page_dimensions">Dimensions:</th><td><span id="naturalWidth"></span> × <span id="naturalHeight"></span><span id="scaled"> (<span id="scaledDesc" data-i18n="page_scaled">scaled to</span> <span id="scaledWidth"></span> × <span id="scaledHeight"></span>)</span></td></tr>
+		<tr><th data-i18n-title="page_imageSizeTitle" data-i18n="page_imageSize">Image Size:</th><td><span id="decodedSize"></span></td></tr>
+		<tr id="modified"><th data-i18n-title="page_lastModifiedTitle" data-i18n="page_lastModified">Last Modified:</th><td><span id="lastMod"></span></td></tr>
 	</tbody></table>
 	<table class="imageinfo"><thead>
-		<th colspan="2"><span><code id="tagname"></code> Attributes</span></th>
+		<th colspan="2"><span><code id="tagname"></code> <span data-i18n="page_attributes">Attributes</span></span></th>
 	</thead><tbody id="tbattributes">
 	</tbody></table>
 	<table class="imageinfo"><thead>
-		<th colspan="2"><span>Context</span></th>
+		<th colspan="2"><span data-i18n="page_context">Context</span></th>
 	</thead><tbody id="tbcontext">
-		<tr><th>Page Title: </th><td><span id="pageTitle"></span></td></tr>
-		<tr><th>Page URL: </th><td><span id="pageUrl"></span></td></tr>
-		<tr id="refUrl"><th>Referer: </th><td><span id="referrer"></span></td></tr>
-		<tr id="linkhref"><th>In Link to: </th><td><span id="ahref"></span></td></tr>
-		<tr><th>Analyzed: </th><td><span id="localTime"></span></td></tr>
+		<tr><th data-i18n="page_pageTitle">Page Title:</th><td><span id="pageTitle"></span></td></tr>
+		<tr><th data-i18n="page_pageUrl">Page URL:</th><td><span id="pageUrl"></span></td></tr>
+		<tr id="refUrl"><th data-i18n="page_referer">Referer:</th><td><span id="referrer"></span></td></tr>
+		<tr id="linkhref"><th data-i18n="page_inLinkTo">In Link to:</th><td><span id="ahref"></span></td></tr>
+		<tr><th data-i18n="page_analyzed">Analyzed:</th><td><span id="localTime"></span></td></tr>
 	</tbody></table>
 </main>
 <form id="popsizer" action="#" onsubmit="return false">
-	<p>Popup window sizing:<p>
-	<p><label><input type="radio" name="radSizing" value="auto"> Automatic (let Firefox decide)</label><br>
-	   <label><input type="radio" name="radSizing" value="capture"> Set from this window (<span id="currwidth"></span> × <span id="currheight"></span>)</label><br>
-	   <label class="suboption"><input type="checkbox" name="custposition"> Also save position (<span id="currleft"></span> @ <span id="currtop"></span>)</label></p>
-	<p><button type="button" id="btnSave">Save</button> <button type="button" id="btnCancel">Cancel</button></p>
+	<p data-i18n="page_popupSizing">Popup window sizing:</p>
+	<p><label><input type="radio" name="radSizing" value="auto"> <span data-i18n="page_popupSizingAuto">Automatic (let Firefox decide)</span></label><br>
+	   <label><input type="radio" name="radSizing" value="capture"> <span data-i18n="page_popupSizingCapture">Set from this window</span> (<span id="currwidth"></span> × <span id="currheight"></span>)</label><br>
+	   <label class="suboption"><input type="checkbox" name="custposition"> <span data-i18n="page_popupSizingPosition">Also save position</span> (<span id="currleft"></span> @ <span id="currtop"></span>)</label></p>
+	<p><button type="button" id="btnSave" data-i18n="page_btnSave">Save</button> <button type="button" id="btnCancel" data-i18n="page_btnCancel">Cancel</button></p>
 </form>
 <script type="text/javascript" src="view-image-info-page.js"></script>
 </body>

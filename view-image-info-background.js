@@ -70,19 +70,19 @@ function setupMenus(){
 		if (oPrefs.menustyle == 'single'){			// Traditional single item
 			browser.menus.create({
 				id: 'viewImageInfoReborn',
-				title: 'View Image Info...',
+				title: browser.i18n.getMessage("menu_viewImageInfo"),
 				contexts: ['image']
 			});
 		} else if (oPrefs.menustyle == 'flyout'){	// Sub-menu items [v1.9]
 			browser.menus.create({
 				id: 'viewImageInfoRebornParent',
-				title: 'View Image In&fo Reborn',
+				title: browser.i18n.getMessage("menu_parent"),
 				contexts: ['image']
 			});
 			browser.menus.create({
 				id: 'viir_viewImage',
 				parentId: 'viewImageInfoRebornParent',
-				title: 'View &Image... in this tab',
+				title: browser.i18n.getMessage("menu_viewImage"),
 				contexts: ['image'],
 				"icons": {
 					"32": "img/mountain-32.png"
@@ -91,7 +91,7 @@ function setupMenus(){
 			browser.menus.create({
 				id: 'viir_window',
 				parentId: 'viewImageInfoRebornParent',
-				title: 'View Image Info in New &Window',
+				title: browser.i18n.getMessage("menu_window"),
 				contexts: ['image'],
 				"icons": {
 					"32": "img/info-32.png"
@@ -100,7 +100,7 @@ function setupMenus(){
 			browser.menus.create({
 				id: 'viir_tab',
 				parentId: 'viewImageInfoRebornParent',
-				title: 'View Image Info in New &Tab',
+				title: browser.i18n.getMessage("menu_tab"),
 				contexts: ['image'],
 				"icons": {
 					"32": "img/info-32.png"
@@ -109,7 +109,7 @@ function setupMenus(){
 			browser.menus.create({
 				id: 'viir_overlay',
 				parentId: 'viewImageInfoRebornParent',
-				title: 'View Image Info in O&verlay',
+				title: browser.i18n.getMessage("menu_overlay"),
 				contexts: ['image'],
 				"icons": {
 					"32": "img/info-32.png"
@@ -118,7 +118,7 @@ function setupMenus(){
 			browser.menus.create({
 				id: 'viir_nowebp',
 				parentId: 'viewImageInfoRebornParent',
-				title: '&Save As... Request without image/webp',
+				title: browser.i18n.getMessage("menu_nowebp"),
 				contexts: ['image'],
 				"icons": {
 					"32": "img/floppydisk-32.png"
@@ -127,7 +127,7 @@ function setupMenus(){
 			browser.menus.create({
 				id: 'viir_asie11',
 				parentId: 'viewImageInfoRebornParent',
-				title: 'Save &As... Request as Internet Explorer 11',
+				title: browser.i18n.getMessage("menu_asie11"),
 				contexts: ['image'],
 				"icons": {
 					"32": "img/floppydisk-32.png"
@@ -136,7 +136,7 @@ function setupMenus(){
 			browser.menus.create({
 				id: 'viir_options',
 				parentId: 'viewImageInfoRebornParent',
-				title: 'Open the &Options page',
+				title: browser.i18n.getMessage("menu_options"),
 				contexts: ['image'],
 				"icons": {
 					"32": "img/gear-32.png"
@@ -146,7 +146,7 @@ function setupMenus(){
 	} else if (proxArray.length > 0) {
 		browser.menus.create({
 			id: 'viewBackgroundImageInfoParent',
-			title: 'View Background Image Info',
+			title: browser.i18n.getMessage("menu_bgParent"),
 			contexts: ['page', 'selection', 'link', 'video', "image"]
 		});
 		// Sort array to try to get the most relevant elements at the beginning
@@ -186,7 +186,7 @@ browser.menus.onClicked.addListener((menuInfo, currTab) => {
 		// No recursion, please!
 		browser.tabs.sendMessage(
 			currTab.id,
-			{"oopsmsg": "Please use the buttons in the popup window rather than the menu items. Also, View Image Info Reborn may not work in other extension pages."},
+			{"oopsmsg": browser.i18n.getMessage("menu_oopsmsg")},
 			{frameId: menuInfo.frameId}
 		);
 	} else {

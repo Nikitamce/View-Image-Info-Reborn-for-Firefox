@@ -109,6 +109,7 @@ browser.storage.local.get("prefs").then( (results) => {
 		else oSettings.ctrlcommand = 'ctrlKey';
 	});
 	// More to come later
+	localizePage();
 }).catch((err) => {
 	console.log('Error retrieving "prefs" from storage: '+err.message);
 });
@@ -265,3 +266,32 @@ function lightSaveBtn(evt){
 // Attach event handler to the Save buttons
 document.forms[0].addEventListener('click', updatePref, false);
 document.forms[0].addEventListener('change', lightSaveBtn, false);
+
+function localizePage() {
+	document.querySelectorAll('[data-i18n]').forEach(el => {
+		var key = el.getAttribute('data-i18n');
+		var message = browser.i18n.getMessage(key);
+		if (message) {
+			if (el.tagName === 'INPUT' && (el.type === 'button' || el.type === 'submit')) {
+				el.value = message;
+			} else {
+				el.textContent = message;
+			}
+		}
+	});
+	document.querySelectorAll('[data-i18n-title]').forEach(el => {
+		var key = el.getAttribute('data-i18n-title');
+		var message = browser.i18n.getMessage(key);
+		if (message) {
+			el.title = message;
+		}
+	});
+	document.querySelectorAll('[data-i18n-html]').forEach(el => {
+		var key = el.getAttribute('data-i18n-html');
+		var message = browser.i18n.getMessage(key);
+		if (message) {
+			el.innerHTML = message;
+		}
+	});
+}
+

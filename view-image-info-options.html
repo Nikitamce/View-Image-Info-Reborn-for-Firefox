@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Options for View Image Info Reborn 2.1</title>
+<title data-i18n="options_title">Options for View Image Info Reborn</title>
 <style>
 body {
 	margin: 8px 16px; font-size: 16px;
@@ -32,48 +32,48 @@ input[disabled] + span + #resizeexplain { display: inline; }
 </style>
 </head>
 <body>
-<h1>Options for View Image Info Reborn</h1>
+<h1 data-i18n="options_title">Options for View Image Info Reborn</h1>
 <form>
 <section>
-	<h2>Menu Item Options<button type="button" id="btnSave0" class="savebtn">Save Changes</button></h2>
-	<p>Menu Style:</p>
-		<p class="rad"><label><input type="radio" name="radMenuStyle" value="single"> Single Item (use modifier keys to select different commands)</label><br> 
-		<label><input type="radio" name="radMenuStyle" value="flyout"> Sub-menu (show commands on a fly-out menu)</label></p>
-	<p class="chk">Action performed by Single Item with different modifiers: </p>
-	<p><label>Plain click:&nbsp; <select name="menuplain">
-		<option value="window">Show info in popup window</option>
-		<option value="inpage">Show info overlaid on image</option>
-		<option value="intab">Show info in new tab</option>
-		<option value="viewimg">View image in current tab</option>
+	<h2><span data-i18n="options_menuItemOptions">Menu Item Options</span><button type="button" id="btnSave0" class="savebtn" data-i18n="options_saveChanges">Save Changes</button></h2>
+	<p data-i18n="options_menuStyle">Menu Style:</p>
+		<p class="rad"><label><input type="radio" name="radMenuStyle" value="single"> <span data-i18n="options_singleItem">Single Item (use modifier keys to select different commands)</span></label><br> 
+		<label><input type="radio" name="radMenuStyle" value="flyout"> <span data-i18n="options_subMenu">Sub-menu (show commands on a fly-out menu)</span></label></p>
+	<p class="chk" data-i18n="options_actionsModifiers">Action performed by Single Item with different modifiers: </p>
+	<p><label><span data-i18n="options_plainClick">Plain click:</span>&nbsp; <select name="menuplain">
+		<option value="window" data-i18n="options_showPopup">Show info in popup window</option>
+		<option value="inpage" data-i18n="options_showOverlay">Show info overlaid on image</option>
+		<option value="intab" data-i18n="options_showTab">Show info in new tab</option>
+		<option value="viewimg" data-i18n="options_viewImageCurrent">View image in current tab</option>
 	</select></label><br>
-	<label>Shift+click: <select name="menushift">
-		<option value="window">Show info in popup window</option>
-		<option value="inpage">Show info overlaid on image</option>
-		<option value="intab">Show info in new tab</option>
-		<option value="viewimg">View image in current tab</option>
+	<label><span data-i18n="options_shiftClick">Shift+click:</span> <select name="menushift">
+		<option value="window" data-i18n="options_showPopup">Show info in popup window</option>
+		<option value="inpage" data-i18n="options_showOverlay">Show info overlaid on image</option>
+		<option value="intab" data-i18n="options_showTab">Show info in new tab</option>
+		<option value="viewimg" data-i18n="options_viewImageCurrent">View image in current tab</option>
 	</select></label><br>
-	<label>Ctrl+click*: <select name="menuctrl">
-		<option value="window">Show info in popup window</option>
-		<option value="inpage">Show info overlaid on image</option>
-		<option value="intab">Show info in new tab</option>
-		<option value="viewimg">View image in current tab</option>
-	</select></label> &nbsp;&nbsp;*<em>on Mac, Command+click</em></p>
+	<label><span data-i18n="options_ctrlClick">Ctrl+click*:</span> <select name="menuctrl">
+		<option value="window" data-i18n="options_showPopup">Show info in popup window</option>
+		<option value="inpage" data-i18n="options_showOverlay">Show info overlaid on image</option>
+		<option value="intab" data-i18n="options_showTab">Show info in new tab</option>
+		<option value="viewimg" data-i18n="options_viewImageCurrent">View image in current tab</option>
+	</select></label> &nbsp;&nbsp;<span data-i18n="options_macCmdClick">*on Mac, Command+click</span></p>
 </section>
 <section>
-	<h2>Popup Options<button type="button" id="btnSave1" class="savebtn">Save Changes</button></h2>
-	<p>Color scheme and font size:</p>
-		<p class="rad"><label><input type="radio" name="radColors" value="auto"> Automatic</label><br> 
-		<label><input type="radio" name="radColors" value="light"> Light background</label><br> 
-		<label><input type="radio" name="radColors" value="dark"> Dark background</label></p>
-		<p><label>Info text size: <select name="fontsize">
+	<h2><span data-i18n="options_popupOptions">Popup Options</span><button type="button" id="btnSave1" class="savebtn" data-i18n="options_saveChanges">Save Changes</button></h2>
+	<p data-i18n="options_colorScheme">Color scheme and font size:</p>
+		<p class="rad"><label><input type="radio" name="radColors" value="auto"> <span data-i18n="options_colorAuto">Automatic</span></label><br> 
+		<label><input type="radio" name="radColors" value="light"> <span data-i18n="options_colorLight">Light background</span></label><br> 
+		<label><input type="radio" name="radColors" value="dark"> <span data-i18n="options_colorDark">Dark background</span></label></p>
+		<p><label><span data-i18n="options_fontSize">Info text size:</span> <select name="fontsize">
 			<option value="size12">12px</option>
 			<option value="size13">13px</option>
 			<option value="size14">14px</option>
 			<option value="size15">15px</option>
 			<option value="size16">16px</option>
 		</select></label></p>
-	<p>Preview image position and sizing:</p>
-		<p class="rad"><label><input type="radio" name="radPreview" value="topthumb"> Preview above info -- thumbnail</label> &nbsp; <label>(Max height: <select name="maxthumbheight">
+	<p data-i18n="options_previewPos">Preview image position and sizing:</p>
+		<p class="rad"><label><input type="radio" name="radPreview" value="topthumb"> <span data-i18n="options_previewAboveThumb">Preview above info -- thumbnail</span></label> &nbsp; <label>(<span data-i18n="options_maxHeight">Max height:</span> <select name="maxthumbheight">
 			<option value="120">120px</option>
 			<option value="150">150px</option>
 			<option value="180">180px</option>
@@ -82,40 +82,33 @@ input[disabled] + span + #resizeexplain { display: inline; }
 			<option value="280">280px</option>
 			<option value="320">320px</option>
 		</select> )</label><br> 
-		<label><input type="radio" name="radPreview" value="topfitw"> Preview above info -- up to available width</label><br> 
-		<label><input type="radio" name="radPreview" value="classic"> Preview below info (classic style)</label></p>
-	<p>Window size and position:</p>
-		<p class="rad"><label><input type="radio" name="radSizing" value="auto"> Automatic (let Firefox decide window size and position)</label><br>
-		<label><input type="radio" name="radSizing" value="capture"><span> Retain last custom size saved from the popup (<span id="currwidth"></span> × <span id="currheight"></span>)<span id="savepos"><br> 
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(and position <span id="currleft"></span> @ <span id="currtop"></span>)</span></span><span id="resizeexplain"><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Use the ↔ button in the popup to set a custom size</em></span></label></p>
+		<label><input type="radio" name="radPreview" value="topfitw"> <span data-i18n="options_previewAboveWidth">Preview above info -- up to available width</span></label><br> 
+		<label><input type="radio" name="radPreview" value="classic"> <span data-i18n="options_previewBelowClassic">Preview below info (classic style)</span></label></p>
+	<p data-i18n="options_windowSizePos">Window size and position:</p>
+		<p class="rad"><label><input type="radio" name="radSizing" value="auto"> <span data-i18n="options_windowSizeAuto">Automatic (let Firefox decide window size and position)</span></label><br>
+		<label><input type="radio" name="radSizing" value="capture"><span> <span data-i18n="options_windowSizeRetain">Retain last custom size saved from the popup</span> (<span id="currwidth"></span> × <span id="currheight"></span>)<span id="savepos"><br> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span data-i18n="options_windowSizePosition">and position</span> <span id="currleft"></span> @ <span id="currtop"></span>)</span></span><span id="resizeexplain"><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em data-i18n="options_windowSizeExplain">Use the ↔ button in the popup to set a custom size</em></span></label></p>
 </section>
 <section>
-	<h2>Other Options<button type="button" id="btnSave2" class="savebtn">Save Changes</button></h2>
-	<p>Tab viewing options:</p>
-		<p class="chk"><label><input type="checkbox" name="tabinback"> Open tab in the background</label></p>
-	<p><label>TinEye Reverse Image Search sort order: <select name="tineyesort">
-			<option value="sort=score&order=desc">Best Match (Most Similar)</option>
-			<option value="sort=score&order=asc">Most Changed</option>
-			<option value="sort=size&order=desc">Biggest Image</option>
-			<option value="sort=crawl_date&order=desc">Newest</option>
-			<option value="sort=crawl_date&order=asc">Oldest</option>
+	<h2><span data-i18n="options_otherOptions">Other Options</span><button type="button" id="btnSave2" class="savebtn" data-i18n="options_saveChanges">Save Changes</button></h2>
+	<p data-i18n="options_tabViewing">Tab viewing options:</p>
+		<p class="chk"><label><input type="checkbox" name="tabinback"> <span data-i18n="options_openTabBackground">Open tab in the background</span></label></p>
+	<p><label><span data-i18n="options_tineyeSortOrder">TinEye Reverse Image Search sort order:</span> <select name="tineyesort">
+			<option value="sort=score&order=desc" data-i18n="options_tineyeBestMatch">Best Match (Most Similar)</option>
+			<option value="sort=score&order=asc" data-i18n="options_tineyeMostChanged">Most Changed</option>
+			<option value="sort=size&order=desc" data-i18n="options_tineyeBiggest">Biggest Image</option>
+			<option value="sort=crawl_date&order=desc" data-i18n="options_tineyeNewest">Newest</option>
+			<option value="sort=crawl_date&order=asc" data-i18n="options_tineyeOldest">Oldest</option>
 		</select></label><br>
-		<em>See</em> <a href="https://tineye.com/terms" target="_blank">TinEye Terms of Service</a> and <a href="https://tineye.com/privacy" target="_blank">TinEye Privacy Policy</a></p>
-<!--
-	<p>Background/Behind Detection options:</p>
-		<p class="chk"><label><input type="checkbox" name="bgonctrl"> Only with Ctrl (Mac: command) + right-click on inline images</label><br> 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Holding Shift always bypasses detection)</p>
-	<p>Automatic display:</p>
-		<p class="chk"><label><input type="checkbox" name="autoopen"> Show info automatically on stand-alone web images</label></p>
--->
+		<em data-i18n="options_tineyeSee">See</em> <a href="https://tineye.com/terms" target="_blank" data-i18n="options_tineyeTerms">TinEye Terms of Service</a> <span data-i18n="options_tineyeAnd">and</span> <a href="https://tineye.com/privacy" target="_blank" data-i18n="options_tineyePrivacy">TinEye Privacy Policy</a></p>
 </section>
 </form>
 <script src="view-image-info-options.js"></script>
 
-<h1>Copyright and License Attributions</h1>
-<p>Code of the <a href="https://addons.mozilla.org/firefox/addon/behind/" target="_blank">behind!</a> extension (&copy; 2021 Devrim Şahin) used under the terms of the Mozilla Public License 2.0, which can be found at <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">https://www.mozilla.org/en-US/MPL/2.0/</a>.</p>
-<p>Button icon, text, and code of the <a href="https://addons.mozilla.org/firefox/addon/tineye-reverse-image-search/" target="_blank">TinEye Reverse Image Search</a> extension (&copy; 2021 TinEye) used under the terms of the MIT License, which provides as follows.</p>
+<h1 data-i18n="options_copyrightTitle">Copyright and License Attributions</h1>
+<p><span data-i18n="options_copyrightBehind">Code of the behind! extension (&copy; 2021 Devrim Şahin) used under the terms of the Mozilla Public License 2.0, which can be found at</span> <a href="https://www.mozilla.org/en-US/MPL/2.0/" target="_blank">https://www.mozilla.org/en-US/MPL/2.0/</a>.</p>
+<p><span data-i18n="options_copyrightTineye">Button icon, text, and code of the TinEye Reverse Image Search extension (&copy; 2021 TinEye) used under the terms of the MIT License, which provides as follows.</span></p>
 <div class="indent">
 	<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 	<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>

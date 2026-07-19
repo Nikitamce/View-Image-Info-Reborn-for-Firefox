@@ -1,7 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "View Image Info Reborn",
-    "description": "Display info for the current image in a new window, new tab, or overlaid on the image.",
+    "name": "__MSG_extensionName__",
+    "description": "__MSG_extensionDescription__",
+    "default_locale": "en",
     "version": "2.1.1",
 	"applications":{
 		"gecko": {

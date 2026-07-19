@@ -112,7 +112,7 @@ function handleMessage(request, sender, sendResponse){
 				var row = document.createElement('tr');
 				var th = document.createElement('th');
 				var td = document.createElement('td');
-				th.textContent = 'Image URL: ';
+				th.textContent = browser.i18n.getMessage('label_imageUrl');
 				var btn = document.createElement('button');
 				btn.textContent = ' X ';
 				btn.id = 'btnclose' + tbl.id;
@@ -138,10 +138,10 @@ function handleMessage(request, sender, sendResponse){
 				row = document.createElement('tr');
 				th = document.createElement('th');
 				td = document.createElement('td');
-				th.textContent = 'Image Type: ';
+				th.textContent = browser.i18n.getMessage('label_imageType');
 				td.id = 'mime-' + moredetails.now;
 				if (moredetails.mimeType) td.textContent = moredetails.mimeType.slice(moredetails.mimeType.indexOf('/')+1).toUpperCase();
-				else td.textContent = '(Unconfirmed)';
+				else td.textContent = browser.i18n.getMessage('text_unconfirmed');
 				row.appendChild(th);
 				row.appendChild(td);
 				tbod.appendChild(row);
@@ -149,10 +149,10 @@ function handleMessage(request, sender, sendResponse){
 				row = document.createElement('tr');
 				th = document.createElement('th');
 				td = document.createElement('td');
-				th.textContent = 'Dimensions: ';
+				th.textContent = browser.i18n.getMessage('label_dimensions');
 				var dim = moredetails.naturalWidth + 'px × ' + moredetails.naturalHeight + 'px';
 				if (moredetails.naturalWidth != moredetails.scaledWidth || moredetails.naturalHeight != moredetails.scaledHeight){
-					dim += ' (scaled to ' + moredetails.scaledWidth + 'px × ' + moredetails.scaledHeight + 'px)';
+					dim += ' (' + browser.i18n.getMessage('text_scaledTo') + ' ' + moredetails.scaledWidth + 'px × ' + moredetails.scaledHeight + 'px)';
 				}
 				td.textContent = dim;
 				row.appendChild(th);
@@ -162,12 +162,12 @@ function handleMessage(request, sender, sendResponse){
 				row = document.createElement('tr');
 				th = document.createElement('th');
 				td = document.createElement('td');
-				th.textContent = 'Image Size: ';
+				th.textContent = browser.i18n.getMessage('label_imageSize');
 				td.id = 'decodedSize-' + moredetails.now;
-				var sz = '(Unconfirmed)';
+				var sz = browser.i18n.getMessage('text_unconfirmed');
 				if (moredetails.decodedSize){
 					sz = (+(Math.round(moredetails.decodedSize/1024 + 'e+2')  + 'e-2')).toLocaleString() + ' KB (' + moredetails.decodedSize.toLocaleString() + ')';
-					if (moredetails.transferSize > 0) sz += ' (transferred ' + (+(Math.round(moredetails.transferSize/1024 + 'e+2')  + 'e-2')).toLocaleString() + ' KB (' + moredetails.transferSize.toLocaleString() + ') in ' +  (+(Math.round(moredetails.transferTime/1000 + 'e+2')  + 'e-2')).toLocaleString() + ' seconds)';
+					if (moredetails.transferSize > 0) sz += ' (' + browser.i18n.getMessage('text_transferred') + ' ' + (+(Math.round(moredetails.transferSize/1024 + 'e+2')  + 'e-2')).toLocaleString() + ' KB (' + moredetails.transferSize.toLocaleString() + ') ' + browser.i18n.getMessage('text_in') + ' ' +  (+(Math.round(moredetails.transferTime/1000 + 'e+2')  + 'e-2')).toLocaleString() + ' ' + browser.i18n.getMessage('text_seconds') + ')';
 				}
 				td.textContent = sz;
 				row.appendChild(th);
@@ -178,7 +178,7 @@ function handleMessage(request, sender, sendResponse){
 					row = document.createElement('tr');
 					th = document.createElement('th');
 					td = document.createElement('td');
-					th.textContent = 'Alt text: ';
+					th.textContent = browser.i18n.getMessage('label_altText');
 					td.textContent = moredetails.altText;
 					row.appendChild(th);
 					row.appendChild(td);
@@ -189,7 +189,7 @@ function handleMessage(request, sender, sendResponse){
 					row = document.createElement('tr');
 					th = document.createElement('th');
 					td = document.createElement('td');
-					th.textContent = 'Title text: ';
+					th.textContent = browser.i18n.getMessage('label_titleText');
 					td.textContent = moredetails.titleText;
 					row.appendChild(th);
 					row.appendChild(td);
@@ -199,7 +199,7 @@ function handleMessage(request, sender, sendResponse){
 				row = document.createElement('tr');
 				th = document.createElement('th');
 				td = document.createElement('td');
-				th.textContent = 'Last Modified: ';
+				th.textContent = browser.i18n.getMessage('label_lastModified');
 				td.id = 'mod-' + moredetails.now;
 				td.textContent = moredetails.lastModified;
 				row.appendChild(th);

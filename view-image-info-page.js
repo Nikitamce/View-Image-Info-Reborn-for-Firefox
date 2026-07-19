@@ -40,6 +40,7 @@ if (timenow){
 		// Set color scheme and font size
 		document.body.setAttribute('colorscheme', details.colorscheme);
 		document.body.setAttribute('style', '--body-size: ' + details.fontsize + ';--maxthumbheight: ' + details.maxthumbheight + 'px');
+		localizePage();
 		var urlNote = '';
 		if (details.currentSrc != ''){
 			prefUrl = details.currentSrc;
@@ -89,7 +90,7 @@ if (timenow){
 		} else {
 			document.getElementById('scaledWidth').textContent = details.scaledWidth + 'px';
 			document.getElementById('scaledHeight').textContent = details.scaledHeight + 'px';
-			if (details.tag != 'IMG') document.getElementById('scaledDesc').textContent = 'in/on/behind element sized';
+			if (details.tag != 'IMG') document.getElementById('scaledDesc').textContent = browser.i18n.getMessage("page_scaledBehind");
 		}
 		// (5) Image size
 		if (details.decodedSize){
@@ -121,8 +122,8 @@ if (timenow){
 						Pclone = document.importNode(newP.content, true);
 						spans = Pclone.querySelectorAll('span');
 						var srcsz = arrSrcSet[k].trim();
-						spans[0].textContent = srcsz.split(/\s/)[0] || 'unknown url';
-						spans[1].textContent = srcsz.split(/\s/)[1] || 'unknown size';
+						spans[0].textContent = srcsz.split(/\s/)[0] || browser.i18n.getMessage("page_unknownUrl");
+						spans[1].textContent = srcsz.split(/\s/)[1] || browser.i18n.getMessage("page_unknownSize");
 						cells[1].appendChild(Pclone);
 					}
 				}
@@ -136,7 +137,7 @@ if (timenow){
 		if (details.bgprops){
 			clone = document.importNode(newTR.content, true);
 			cells = clone.querySelectorAll('tr>th, tr>td');
-			cells[0].textContent = '[computedCSS]';
+			cells[0].textContent = browser.i18n.getMessage("page_computedCss");
 			var bgprops = Object.entries(details.bgprops);
 			for (j=0; j<bgprops.length; j++){
 				cells[1].textContent += bgprops[j][0] + ': ' + bgprops[j][1] + '; ';
@@ -147,7 +148,7 @@ if (timenow){
 		document.getElementById('pageTitle').textContent = details.pageTitle;
 		var refHref = details.pageUrl;
 		if (details.pageUrl === details.imgSrc){
-			document.getElementById('pageUrl').textContent = '(Stand Alone)';
+			document.getElementById('pageUrl').textContent = browser.i18n.getMessage("page_pageUrlStandAlone");
 		} else {
 			document.getElementById('pageUrl').textContent = details.pageUrl;
 		}
@@ -179,7 +180,7 @@ if (timenow){
 		// Load the image
 		var img = document.getElementById('preview');
 		img.onerror = function(event){
-			document.querySelector('#oops span').textContent = 'Image did not load, possibly due to lack of credentials or missing referrer.';
+			document.querySelector('#oops span').textContent = browser.i18n.getMessage("page_errNotLoaded");
 			document.getElementById('oops').style.display = 'block';
 			document.getElementById('previewtools').style.display = 'inline-block';
 		};
@@ -367,7 +368,7 @@ document.getElementById('btnSave').addEventListener('click', function(evt){
 	browser.runtime.sendMessage({
 		popsizing: sizeupdate
 	}).catch((err) => {
-		document.querySelector('#oops span').textContent = 'Error updating storage: ' + err.message;
+		document.querySelector('#oops span').textContent = browser.i18n.getMessage("page_errStorage") + err.message;
 		document.getElementById('oops').style.display = 'block';
 	});
 	// Close the overlay
@@ -521,7 +522,7 @@ document.getElementById('referForm').addEventListener('change', function(evt){
 function updatePreview(refUrl){		// [v1.8]
 	var img = document.getElementById('preview');
 	img.onerror = function(event){
-		document.querySelector('#oops span').textContent = 'Image did not load, possibly due to lack of credentials or referring host name.';
+		document.querySelector('#oops span').textContent = browser.i18n.getMessage("page_errNotLoadedHost");
 		document.getElementById('oops').style.display = 'block';
 	};
 	img.onload = function(event){
@@ -579,3 +580,31 @@ function handleMessage(request, sender, sendResponse){
 	}
 }
 browser.runtime.onMessage.addListener(handleMessage);
+
+function localizePage() {
+	document.querySelectorAll('[data-i18n]').forEach(el => {
+		var key = el.getAttribute('data-i18n');
+		var message = browser.i18n.getMessage(key);
+		if (message) {
+			if (el.tagName === 'INPUT' && (el.type === 'button' || el.type === 'submit')) {
+				el.value = message;
+			} else {
+				el.textContent = message;
+			}
+		}
+	});
+	document.querySelectorAll('[data-i18n-title]').forEach(el => {
+		var key = el.getAttribute('data-i18n-title');
+		var message = browser.i18n.getMessage(key);
+		if (message) {
+			el.title = message;
+		}
+	});
+	document.querySelectorAll('[data-i18n-html]').forEach(el => {
+		var key = el.getAttribute('data-i18n-html');
+		var message = browser.i18n.getMessage(key);
+		if (message) {
+			el.innerHTML = message;
+		}
+	});
+}
